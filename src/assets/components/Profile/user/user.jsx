@@ -14,7 +14,6 @@ const User = () => {
     };
     return (
         <div className='font-font h-auto bg-fondocolor3 text-white' >
-            <BarraNav />
             <div className='flex flex-col gap-5 justify-items-center '>
                 {/* Section Username and email */}
                 <section className=' text-center p-5 '>
