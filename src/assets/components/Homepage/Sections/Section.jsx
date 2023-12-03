@@ -2,8 +2,7 @@ import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-
-const Seccion = ({ title, paragraph, textB }) => {
+const Seccion = ({ title, paragraph, textB, image }) => {
 
     const token = sessionStorage.getItem('toke');
     let link;
