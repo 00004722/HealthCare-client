@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FooterHP from './Sections/FooterHP'
 import Sections from './Sections/Sections'
 import Contact from './Sections/Contact'
-
+import secondSectionImage from '../../assets/images/Homepage/second_section.png'
 
 import Seccion from './Sections/Section'
 const Homepage = () => {
@@ -20,7 +20,7 @@ const Homepage = () => {
         />
 
         {/* Exercise section */}
-        <Seccion image={"second_section.jpg"}
+        <Seccion image={secondSectionImage}
           title={"Descubre una nueva rutina de ejercicios!"}
           paragraph={"En nuestro sitio, encontrarás una amplia variedad de entrenamientos. Ya sea que busques perder peso, ganar fuerza o simplemente mantenerte activo. ¡Empieza hoy mismo tu viaje hacia una vida más saludable y activa!"}
           textB={"DESCUBRELA"}
