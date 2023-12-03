@@ -64,10 +64,13 @@ const Ingresar = ({ setIsLoggedIn }) => {
             });
 
             const { data } = await signUp(formData);
-            navigate('/');
-            setIsLoggedIn(true);
             console.log(data);
-            sessionStorage.setItem('toke', data);
+            if (data) {
+                setIsLoggedIn(true);
+                sessionStorage.setItem('toke', data);
+                navigate('/')
+            }
+
 
         }
     };

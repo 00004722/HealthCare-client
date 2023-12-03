@@ -35,7 +35,7 @@ const BarraNav = () => {
     }, [navigate]);
 
     return (
-        <nav className='flex items-center justify-between flex-wrap bg-fondocolor p-6 z-50'>
+        <nav className='flex items-center justify-between flex-wrap bg-fondocolor p-6'>
             <div className='flex items-center flex-shrink-0 mr-6'>
                 <h1 className='text-letracolor1 font-semibold text-3xl '>
                     <Link to='/'>
@@ -80,7 +80,7 @@ const BarraNav = () => {
                 </button>
                 <div className='text-lg lg:text-xl mt-4 '>
                     <div className='flex items-center text-letracolor1 mb-10 bg-gradient-linear rounded p-4'>
-                        <span className='text-lg lg:text-xl'>¡Bienvenido!</span>
+                        <span className='text-lg lg:text-xl'>!Bienvenido¡</span>
                     </div>
 
                     <a

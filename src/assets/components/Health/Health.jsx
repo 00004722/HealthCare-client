@@ -10,6 +10,8 @@ const Health = () => {
 
     return (
         <div className="bg-background flex flex-col font-font">
+            <BarraNav />
+
             {/* Cars section */}
             <section className="p-8 w-full lg:h-screen xl:h-screen bg-healthSection1 bg-no-repeat bg-center bg-cover
             flex flex-row flex-wrap place-content-center place-items-center gap-4">
