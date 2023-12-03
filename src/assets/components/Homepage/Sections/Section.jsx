@@ -2,7 +2,7 @@ import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-const Seccion = ({ title, paragraph, textB, image,background }) => {
+const Seccion = ({ title, paragraph, textB, image }) => {
 
     const token = sessionStorage.getItem('toke');
     let link;
@@ -14,8 +14,8 @@ const Seccion = ({ title, paragraph, textB, image,background }) => {
 
 
     return (
-        <section className={`p-4 ${background} w-full flex flex-col justify-center items-center text-white gap-5 
-        lg:flex-row lg:h-screen`}>
+        <section className='p-4 w-full flex flex-col justify-center items-center text-white gap-5 
+        lg:flex-row lg:h-screen'>
 
             <figure className='h-full w-5/6 lg:w-1/2 xl:w-sectionImage flex flex-row items-center justify-center'>
                 {/* Cambié object-fill a object-contain y ajusté el tamaño del contenedor */}
