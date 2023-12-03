@@ -80,7 +80,7 @@ const BarraNav = () => {
                 </button>
                 <div className='text-lg lg:text-xl mt-4 '>
                     <div className='flex items-center text-letracolor1 mb-10 bg-gradient-linear rounded p-4'>
-                        <span className='text-lg lg:text-xl'>!Bienvenido¡</span>
+                        <span className='text-lg lg:text-xl'>¡Bienvenido!</span>
                     </div>
 
                     <a

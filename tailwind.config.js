@@ -40,6 +40,9 @@ export default {
         'homeSection1':"url('./assets/images/Homepage/bgSection1.jpg')",
         'homeSection3':"url('./assets/images/Homepage/bgSection3.jpg')",
         'healthSection1':"url('./assets/images/Health/bgSection1.jpg')",
+        'firstSection':"url('./assets/images/Homepage/first_section.jpg')",
+        'secondSection':"url('./assets/images/Homepage/second_section.jpg')",
+        'thirdSection':"url('./assets/images/Homepage/third_section.jpg')",
         'gradient-linear': 'linear-gradient(90deg, rgba(49,46,129,1) 7%, rgba(30,58,138,1) 44%, rgba(112,26,117,1) 100%)'
       }
     },
