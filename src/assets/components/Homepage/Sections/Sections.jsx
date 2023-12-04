@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-const Sections = ({ title, paragraph, textB, image, background }) => {
+const Sections = ({ title, paragraph, textB, bgImage, background }) => {
     const token = sessionStorage.getItem('toke');
     let link;
     if (!token) {
@@ -40,11 +40,8 @@ const Sections = ({ title, paragraph, textB, image, background }) => {
 
             <figure className='h-full w-5/6 lg:w-1/2 xl:w-sectionImage flex flex-row items-center justify-center'>
                 {/* Cambié object-fill a object-contain y ajusté el tamaño del contenedor */}
-                <div className='h-96'>
-                    <img className='h-full w-full rounded-lg'
-                        src={image}
-                        alt="IMAGEN"
-                    />
+                <div className='h-96 w-full rounded-lg'>
+                    <div className={`${bgImage}`}/>
                 </div>
             </figure>
         </section>
