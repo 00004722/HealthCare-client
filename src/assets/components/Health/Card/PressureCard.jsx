@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
 import { useForm } from 'react-hook-form';
-import ResultsPressure from './ResultsPressure';
 import { updateData } from '../../../services/stats.services';
+import ResultsPressure from './Results';
 
 const PressureCard = ({ bgIcon, icon, color, tittle, endpoint }) => {
     const [presionSis, setPresionSis] = useState(0);
