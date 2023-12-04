@@ -4,7 +4,7 @@ const URL = import.meta.env.VITE_URL;
 
 export const updateData = async (form, token, endpoint) => {
     try {
-        const message = await axios.post(`${URL}/HC/${endpoint}`, form, {
+        const message = await axios.post(`${URL}HC/${endpoint}`, form, {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
@@ -18,7 +18,7 @@ export const updateData = async (form, token, endpoint) => {
 
 export const getValueData = async (token, endpoint) => {
     try {
-        const { data } = await axios.get(`${URL}/HC/${endpoint}`, { headers: { 'Authorization': `Bearer ${token}` } });
+        const { data } = await axios.get(`${URL}HC/${endpoint}`, { headers: { 'Authorization': `Bearer ${token}` } });
         const values = data.map(a =>{
             return a.values;
         })
@@ -30,7 +30,7 @@ export const getValueData = async (token, endpoint) => {
 
 export const getDateData = async (token, endpoint) => {
     try {
-        const { data } = await axios.get(`${URL}/HC/${endpoint}`, { headers: { 'Authorization': `Bearer ${token}` } });
+        const { data } = await axios.get(`${URL}HC/${endpoint}`, { headers: { 'Authorization': `Bearer ${token}` } });
         const dates = data.map(a =>{
             return a.date;
         })
